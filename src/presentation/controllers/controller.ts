@@ -1,7 +1,7 @@
+import { ServerError } from '@/presentation/errors'
+import { badRequest, internalServerError } from '@/presentation/helpers'
 import type { HttpResponse } from '@/presentation/protocols'
 import { ValidationComposite, type Validator } from '@/presentation/validations'
-import { badRequest, internalServerError } from '@/presentation/helpers'
-import { ServerError } from '@/presentation/errors'
 
 export abstract class Controller {
   abstract perform(request: any): Promise<HttpResponse>

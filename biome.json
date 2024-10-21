@@ -27,9 +27,6 @@
     }
   },
   "files": {
-    "ignore": [
-      "node_modules",
-      "package.json"
-    ]
+    "ignore": ["node_modules", "package.json"]
   }
 }

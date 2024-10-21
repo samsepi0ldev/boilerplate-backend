@@ -1,8 +1,8 @@
-import { Controller } from '@/presentation/controllers'
-import type { HttpResponse } from '@/presentation/protocols'
 import type { CreateUser } from '@/domain/usecases/user'
-import { badRequest, internalServerError, ok } from '@/presentation/helpers'
+import { Controller } from '@/presentation/controllers'
 import { ParamInUserError, ServerError } from '@/presentation/errors'
+import { badRequest, internalServerError, ok } from '@/presentation/helpers'
+import type { HttpResponse } from '@/presentation/protocols'
 
 type Request = {
   name: string
