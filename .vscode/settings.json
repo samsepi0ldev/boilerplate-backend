@@ -1,0 +1,7 @@
+{
+  "dotenv.enableAutocloaking": false,
+  "editor.formatOnSave": true,
+  "editor.defaultFormatter": "biomejs.biome",
+  "files.autoSave": "off",
+  "git.autofetch": true
+}
