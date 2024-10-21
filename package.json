@@ -22,5 +22,16 @@
     "coverage": "vitest run --coverage",
     "test:ci": "vitest --poolOptions.threads.singleThread"
   },
+  "lint-staged": {
+    "*.{js,ts,cjs,mjs,mts,d.cts,d.mts}": [
+      "biome check --files-ignore-unknown=true",
+      "biome check --write --no-errors-on-unmatched",
+      "biome check --write --organize-imports-enabled=false --no-errors-on-unmatched",
+      "biome check --write --unsafe --no-errors-on-unmatched",
+      "biome format --write --no-errors-on-unmatched",
+      "biome lint --write --no-errors-on-unmatched"
+    ],
+    "*": ["biome check --no-errors-on-unmatched --files-ignore-unknown=true"]
+  },
   "type": "module"
 }
