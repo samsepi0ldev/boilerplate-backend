@@ -20,10 +20,16 @@
   "linter": {
     "enabled": true,
     "rules": {
-      "recommended": true
+      "recommended": true,
+      "suspicious": {
+        "noExplicitAny": "off"
+      }
     }
   },
   "files": {
-    "ignore": ["node_modules", "package.json"]
+    "ignore": [
+      "node_modules",
+      "package.json"
+    ]
   }
 }
