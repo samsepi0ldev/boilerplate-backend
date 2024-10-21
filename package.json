@@ -7,6 +7,7 @@
   "license": "MIT",
   "devDependencies": {
     "@biomejs/biome": "1.9.4",
+    "@types/bcrypt": "^5.0.2",
     "@types/node": "^22.7.7",
     "drizzle-kit": "^0.26.2",
     "git-commit-msg-linter": "^5.0.8",
@@ -18,7 +19,7 @@
     "vitest-mock-extended": "^2.0.2"
   },
   "scripts": {
-    "dev": "tsx --env-file ./.env watch src/main/index.ts",
+    "dev": "tsx watch --inspect-brk --env-file ./.env src/main/index.ts",
     "prepare": "husky",
     "lint": "@biomejs/biome lint --write",
     "test": "vitest",
@@ -41,6 +42,7 @@
     ]
   },
   "dependencies": {
+    "@fastify/cors": "^10.0.1",
     "@paralleldrive/cuid2": "^2.2.2",
     "bcrypt": "^5.1.1",
     "drizzle-orm": "^0.35.2",
