@@ -14,7 +14,7 @@ export enum HttpStatusCode {
   ServiceUnavailable = 503,
 }
 
-export interface HttpResponse<T = unknown> {
+export interface HttpResponse<T = any> {
   data: T
   statusCode: HttpStatusCode
 }
