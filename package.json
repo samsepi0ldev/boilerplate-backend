@@ -35,5 +35,8 @@
     "*": [
       "biome check --no-errors-on-unmatched --files-ignore-unknown=true"
     ]
+  },
+  "dependencies": {
+    "fastify": "^5.0.0"
   }
 }
